@@ -42,13 +42,13 @@ class LoginController extends Controller
         $input = $request->all();
         $this->validate($request, [
             'nik' => 'required',
-            'nama' => 'required'
+            'password' => 'required'
         ]);
 
         $filter = filter_var($request->nik, FILTER_VALIDATE_EMAIL) ? 'email' : 'nik';
         if(auth()->attempt(array(
             $filter => $input['nik'],
-            'nama' => $input['nama']
+            'password' => $input['password']
         ))){
             return redirect()->route('home');
         }else{
