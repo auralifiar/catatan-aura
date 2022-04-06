@@ -45,7 +45,7 @@
                 <a class="btn btn-secondary" href="{{ route('login') }}">
                     Sudah punya akun?
                 </a>
-                <button type="submit" class="btn btn-primary ms-auto">
+                <button type="submit" class="btn btn-info text-white ms-auto">
                     {{ __('Register') }}
                 </button>
             </div>

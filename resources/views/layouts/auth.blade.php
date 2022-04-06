@@ -23,10 +23,10 @@
   <div class="container mt-5 ">
     <div class="row justify-content-center">
       <div class="col-lg-5">
-        <div class="card mt-5">
+        <div class="card mt-5 border-0">
           <div class="card-body py-5">
-            <h2 class="text-center">PEDULI DIRI</h2>
-            <p class="text-center text-secondary small mb-5">CATATAN PERJALANAN</p>
+            <h2 class="text-center font-monospace">PEDULI DIRI</h2>
+            <p class="text-center text-secondary small mb-4">CATATAN PERJALANAN</p>
 
             <!-- form -->
             @yield('content')

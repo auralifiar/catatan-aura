@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="col-md-8">
-    <div class="card">
-        <div class="card-header text-center font-monospace">
+    <div class="card border-0">
+        <div class="card-header text-center font-monospace border-0 bg-info text-white">
         <h3>Tambah Catatan Perjalanan</h3>
         </div>
         <div class="card-body">
@@ -46,7 +46,7 @@
                     </div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="submit" class="btn btn-info text-white">Simpan</button>
             <button type="reset" class="btn btn-danger">Reset</button>
 
         </form>

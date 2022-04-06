@@ -21,12 +21,12 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-info shadow-sm">
-            <div class="container">
-                <a class="navbar-brand font-monospace" href="{{ url('/') }}">
+        <nav class="navbar navbar-expand-md navbar-dark bg-info shadow-sm text-center">
+            <div class="container justify-content-center">
+                <a class="navbar-brand font-monospace fs-3" style="text-align: center" href="{{ url('/') }}">
                     Peduli Diri
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -61,7 +61,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
-                                        <i class="bi bi-box-arrow-right text-primary"></i>  {{ __('Keluar') }}
+                                        <i class="bi bi-box-arrow-right text-info"></i>  {{ __('Keluar') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -71,22 +71,26 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-5">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-md-3 me-2">
-                        <ul class="list-group">
-                            <a href="/home" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-house-door text-primary me-2"></i> Dashboard</li></a>
-                            <a href="catatan/create" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-journal-plus text-primary me-2"></i> Tambah Catatan</li></a>
-                            <a href="/catatan" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-journal-text text-primary me-2"></i> Semua Catatan</li></a>
+                        <div class="card bg-info border-0 text-center mb-3 p-2">
+                            <img src="https://i.pinimg.com/474x/57/70/f0/5770f01a32c3c53e90ecda61483ccb08.jpg" width="70" class="rounded-circle mx-auto d-block mt-2 mb-3">
+                            <h6 class="fw-bold text-white">{{ Auth::user()->nama }}</h3>
+                        </div>
+                        <ul class="list-group mb-3">
+                            <a href="/home" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-house-door text-info me-2"></i> Dashboard</li></a>
+                            <a href="catatan/create" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-journal-plus text-info me-2"></i> Tambah Catatan</li></a>
+                            <a href="/catatan" class="text-decoration-none"><li class="list-group-item border-0"><i class="bi bi-journal-text text-info me-2"></i> Semua Catatan</li></a>
                             <a href="{{ route('logout') }}" class="text-decoration-none" onclick="event.preventDefault();
                                                                                                     document.getElementById('logout-form').submit();">
                                 <li class="list-group-item border-0">
-                                    <i class="bi bi-box-arrow-right text-primary me-2"></i>  {{ __('Keluar') }}
+                                    <i class="bi bi-box-arrow-right text-info me-2"></i>  {{ __('Keluar') }}
                                 </li>
                             </a>
             
