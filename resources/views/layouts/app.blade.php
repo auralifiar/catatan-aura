@@ -21,9 +21,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-info shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand font-monospace" href="{{ url('/') }}">
                     Peduli Diri
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -59,8 +59,8 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
                                         <i class="bi bi-box-arrow-right text-primary"></i>  {{ __('Keluar') }}
                                     </a>
 

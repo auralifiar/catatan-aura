@@ -3,8 +3,11 @@
 @section('content')
 
 <div class="col-md-8">
-    <div class="bg-white p-3">
+    <div class="card">
+        <div class="card-header text-center font-monospace">
         <h3>Tambah Catatan Perjalanan</h3>
+        </div>
+        <div class="card-body">
         <form action="{{ route('catatan.store') }}" method="POST">                    
             @csrf
             <div class="form-group my-3">
@@ -43,8 +46,11 @@
                     </div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-primary float-end">Simpan</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+
         </form>
+        </div>
     </div>
 </div>
 

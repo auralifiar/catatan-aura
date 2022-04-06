@@ -8,7 +8,7 @@
         <div class="col-md-12">
             <div class="mb-3">
                 <input id="text" type="nik" class="form-control @error('nik') is-invalid @enderror" name="nik"
-                    value="{{ old('nik') }}" required autocomplete="nik" autofocus placeholder="Input NIK">
+                    value="{{ old('nik') }}" required autocomplete="nik" autofocus placeholder="NIK">
 
                 @error('nik')
                 <span class="invalid-feedback" role="alert">

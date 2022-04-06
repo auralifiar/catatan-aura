@@ -4,7 +4,7 @@
 
 <div class="col-md-8">
     <div class="bg-white p-3">
-        <h3>Riwayat Perjalanan</h3>
+        <h3 class="font-monospace text-center">Riwayat Perjalanan</h3>
         @if ($message = Session::get('berhasil'))
         <div class="alert alert-success alert-block mt-2">
             <strong>{{ $message }}</strong>
