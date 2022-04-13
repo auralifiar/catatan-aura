@@ -39,7 +39,8 @@
             </div>
             <div class="form-group my-3">
                 <label>Suhu</label>
-                <input type="text" class="form-control @error('suhu') is-invalid @enderror" name="suhu" value="{{ old('suhu') }}" >
+                <input type="text" class="form-control @error('suhu') is-invalid @enderror" name="suhu" value="{{ old('suhu') }}">
+                if ($suhu=)
                 @error('suhu')
                     <div class="alert alert-danger mt-2">
                         {{ $message }}

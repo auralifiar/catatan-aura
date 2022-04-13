@@ -7,8 +7,8 @@
     <div class="row">
         <div class="col-md-12">
             <div class="mb-3">
-                <input id="text" type="nik" class="form-control @error('nik') is-invalid @enderror" name="nik"
-                    value="{{ old('nik') }}" required autocomplete="nik" autofocus placeholder="Input NIK">
+                <input id="text" type="nik" minlength="15" class="form-control @error('nik') is-invalid @enderror" name="nik"
+                    value="{{ old('nik') }}" required autocomplete="nik" autofocus placeholder="Input NIK" maxlength="15">
 
                 @error('nik')
                 <span class="invalid-feedback" role="alert">
