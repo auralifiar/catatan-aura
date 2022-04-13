@@ -21,7 +21,7 @@ class CatatanController extends Controller {
             'tanggal'   => 'required',
             'waktu'     => 'required',
             'lokasi'    => 'required',
-            'suhu'      => 'required'
+            'suhu'      => 'required|numeric|max:40'
         ]);
 
 
@@ -59,7 +59,7 @@ class CatatanController extends Controller {
             'tanggal'   => 'required',
             'waktu'     => 'required',
             'lokasi'    => 'required',
-            'suhu'      => 'required'
+            'suhu'      => 'required|numeric|max:40'
         ]);
 
         $catatan = Catatan::findOrFail($id);
